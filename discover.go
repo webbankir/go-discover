@@ -4,6 +4,7 @@ package discover
 
 import (
 	"fmt"
+	"github.com/hashicorp/go-discover/provider/yandex_instance_group_discover"
 	"log"
 	"sort"
 	"strings"
@@ -45,20 +46,21 @@ type ProviderWithUserAgent interface {
 
 // Providers contains all available providers.
 var Providers = map[string]Provider{
-	"aliyun":       &aliyun.Provider{},
-	"aws":          &aws.Provider{},
-	"azure":        &azure.Provider{},
-	"digitalocean": &digitalocean.Provider{},
-	"gce":          &gce.Provider{},
-	"linode":       &linode.Provider{},
-	"mdns":         &mdns.Provider{},
-	"os":           &os.Provider{},
-	"scaleway":     &scaleway.Provider{},
-	"softlayer":    &softlayer.Provider{},
-	"tencentcloud": &tencentcloud.Provider{},
-	"triton":       &triton.Provider{},
-	"vsphere":      &vsphere.Provider{},
-	"packet":       &packet.Provider{},
+	"aliyun":                      &aliyun.Provider{},
+	"aws":                         &aws.Provider{},
+	"azure":                       &azure.Provider{},
+	"digitalocean":                &digitalocean.Provider{},
+	"gce":                         &gce.Provider{},
+	"linode":                      &linode.Provider{},
+	"mdns":                        &mdns.Provider{},
+	"os":                          &os.Provider{},
+	"scaleway":                    &scaleway.Provider{},
+	"softlayer":                   &softlayer.Provider{},
+	"tencentcloud":                &tencentcloud.Provider{},
+	"triton":                      &triton.Provider{},
+	"vsphere":                     &vsphere.Provider{},
+	"packet":                      &packet.Provider{},
+	"yandex_cloud_instance_group": &yandex_instance_group_discover.Provider{},
 }
 
 // Discover looks up metadata in different cloud environments.
