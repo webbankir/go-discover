@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	discover "github.com/hashicorp/go-discover"
-	"github.com/hashicorp/go-discover/provider/softlayer"
+	discover "github.com/webbankir/go-discover"
+	"github.com/webbankir/go-discover/provider/softlayer"
 )
 
 func TestAddrs(t *testing.T) {

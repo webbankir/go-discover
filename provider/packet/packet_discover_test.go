@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	discover "github.com/hashicorp/go-discover"
-	"github.com/hashicorp/go-discover/provider/packet"
+	discover "github.com/webbankir/go-discover"
+	"github.com/webbankir/go-discover/provider/packet"
 )
 
 var _ discover.Provider = (*packet.Provider)(nil)

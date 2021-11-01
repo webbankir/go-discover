@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	discover "github.com/hashicorp/go-discover"
-	"github.com/hashicorp/go-discover/provider/tencentcloud"
+	discover "github.com/webbankir/go-discover"
+	"github.com/webbankir/go-discover/provider/tencentcloud"
 	"github.com/stretchr/testify/require"
 )
 

@@ -8,8 +8,8 @@ import (
 
 	"github.com/hashicorp/mdns"
 
-	discover "github.com/hashicorp/go-discover"
-	provider "github.com/hashicorp/go-discover/provider/mdns"
+	discover "github.com/webbankir/go-discover"
+	provider "github.com/webbankir/go-discover/provider/mdns"
 )
 
 func newTestServer() (*mdns.Server, error) {

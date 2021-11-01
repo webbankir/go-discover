@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hashicorp/go-discover"
-	"github.com/hashicorp/go-discover/provider/triton"
+	"github.com/webbankir/go-discover"
+	"github.com/webbankir/go-discover/provider/triton"
 )
 
 func TestAddrs(t *testing.T) {

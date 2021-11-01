@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	discover "github.com/hashicorp/go-discover"
-	openstack "github.com/hashicorp/go-discover/provider/os"
+	discover "github.com/webbankir/go-discover"
+	openstack "github.com/webbankir/go-discover/provider/os"
 )
 
 var _ discover.Provider = (*openstack.Provider)(nil)

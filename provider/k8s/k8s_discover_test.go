@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	discover "github.com/hashicorp/go-discover"
-	"github.com/hashicorp/go-discover/provider/k8s"
+	discover "github.com/webbankir/go-discover"
+	"github.com/webbankir/go-discover/provider/k8s"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

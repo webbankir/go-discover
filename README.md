@@ -1,4 +1,4 @@
-# Go Discover Nodes for Cloud Providers [![CircleCI](https://circleci.com/gh/hashicorp/go-discover.svg?style=shield)](https://circleci.com/gh/hashicorp/go-discover) [![GoDoc](https://godoc.org/github.com/hashicorp/go-discover?status.svg)](https://godoc.org/github.com/hashicorp/go-discover)
+# Go Discover Nodes for Cloud Providers [![CircleCI](https://circleci.com/gh/hashicorp/go-discover.svg?style=shield)](https://circleci.com/gh/hashicorp/go-discover) [![GoDoc](https://godoc.org/github.com/webbankir/go-discover?status.svg)](https://godoc.org/github.com/webbankir/go-discover)
 
 
 `go-discover` is a Go (golang) library and command line tool to discover
@@ -18,29 +18,29 @@ Duplicate keys are reported as error and the provider is determined through the
 
 The following cloud providers have implementations in the go-discover/provider
 sub packages. Additional providers can be added through the
-[Register](https://godoc.org/github.com/hashicorp/go-discover#Register)
+[Register](https://godoc.org/github.com/webbankir/go-discover#Register)
 function.
 
- * Aliyun (Alibaba) Cloud [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/aliyun/aliyun_discover.go#L15-L28)
- * Amazon AWS [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/aws/aws_discover.go#L19-L33)
- * DigitalOcean [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/digitalocean/digitalocean_discover.go#L16-L24)
- * Google Cloud [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/gce/gce_discover.go#L17-L37)
- * Linode [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/linode/linode_discover.go#L30-L41)
- * mDNS [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/mdns/mdns_provider.go#L19-L31)
- * Microsoft Azure [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/azure/azure_discover.go#L16-L37)
- * Openstack [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/os/os_discover.go#L23-L38)
- * Scaleway [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/scaleway/scaleway_discover.go#L14-L22)
- * SoftLayer [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/softlayer/softlayer_discover.go#L16-L25)
- * TencentCloud [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/tencentcloud/tencentcloud_discover.go#L23-L37)
- * Triton [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/triton/triton_discover.go#L17-L27)
- * vSphere [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/vsphere/vsphere_discover.go#L148-L155)
- * Packet [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/packet/packet_discover.go#L25-L35)
+ * Aliyun (Alibaba) Cloud [Config options](https://github.com/webbankir/go-discover/blob/master/provider/aliyun/aliyun_discover.go#L15-L28)
+ * Amazon AWS [Config options](https://github.com/webbankir/go-discover/blob/master/provider/aws/aws_discover.go#L19-L33)
+ * DigitalOcean [Config options](https://github.com/webbankir/go-discover/blob/master/provider/digitalocean/digitalocean_discover.go#L16-L24)
+ * Google Cloud [Config options](https://github.com/webbankir/go-discover/blob/master/provider/gce/gce_discover.go#L17-L37)
+ * Linode [Config options](https://github.com/webbankir/go-discover/blob/master/provider/linode/linode_discover.go#L30-L41)
+ * mDNS [Config options](https://github.com/webbankir/go-discover/blob/master/provider/mdns/mdns_provider.go#L19-L31)
+ * Microsoft Azure [Config options](https://github.com/webbankir/go-discover/blob/master/provider/azure/azure_discover.go#L16-L37)
+ * Openstack [Config options](https://github.com/webbankir/go-discover/blob/master/provider/os/os_discover.go#L23-L38)
+ * Scaleway [Config options](https://github.com/webbankir/go-discover/blob/master/provider/scaleway/scaleway_discover.go#L14-L22)
+ * SoftLayer [Config options](https://github.com/webbankir/go-discover/blob/master/provider/softlayer/softlayer_discover.go#L16-L25)
+ * TencentCloud [Config options](https://github.com/webbankir/go-discover/blob/master/provider/tencentcloud/tencentcloud_discover.go#L23-L37)
+ * Triton [Config options](https://github.com/webbankir/go-discover/blob/master/provider/triton/triton_discover.go#L17-L27)
+ * vSphere [Config options](https://github.com/webbankir/go-discover/blob/master/provider/vsphere/vsphere_discover.go#L148-L155)
+ * Packet [Config options](https://github.com/webbankir/go-discover/blob/master/provider/packet/packet_discover.go#L25-L35)
 
 The following providers are implemented in the go-discover/provider subdirectory
 but aren't automatically registered. If you want to support these providers,
 register them manually:
 
- * Kubernetes [Config options](https://github.com/hashicorp/go-discover/blob/master/provider/k8s/k8s_discover.go#L32-L51)
+ * Kubernetes [Config options](https://github.com/webbankir/go-discover/blob/master/provider/k8s/k8s_discover.go#L32-L51)
 
 HashiCorp maintains acceptance tests that regularly allocate and run tests with
 real resources to verify the behavior of several of these providers. Those
@@ -100,7 +100,7 @@ provider=k8s label_selector="app = consul-server"
 Install the command line tool with:
 
 ```
-go get -u github.com/hashicorp/go-discover/cmd/discover
+go get -u github.com/webbankir/go-discover/cmd/discover
 ```
 
 Then run it with:
@@ -114,7 +114,7 @@ $ discover addrs provider=aws region=eu-west-1 ...
 Install the library with:
 
 ```
-go get -u github.com/hashicorp/go-discover
+go get -u github.com/webbankir/go-discover
 ```
 
 You can then either support discovery for all available providers
@@ -143,7 +143,7 @@ You can also add support for providers that aren't registered by default:
 
 ```go
 // Imports at top of file
-import "github.com/hashicorp/go-discover/provider/k8s"
+import "github.com/webbankir/go-discover/provider/k8s"
 
 // support discovery for all supported providers
 d := discover.Discover{}
@@ -159,14 +159,14 @@ d := discover.Discover{
 ```
 
 For complete API documentation, see
-[GoDoc](https://godoc.org/github.com/hashicorp/go-discover). The configuration
+[GoDoc](https://godoc.org/github.com/webbankir/go-discover). The configuration
 for the supported providers is documented in the
-[providers](https://godoc.org/github.com/hashicorp/go-discover/provider)
+[providers](https://godoc.org/github.com/webbankir/go-discover/provider)
 sub-package.
 
 ## Testing
 
-**Note: Due to the `go.sum` checksum errors referenced in [#68](https://github.com/hashicorp/go-discover/issues/68), 
+**Note: Due to the `go.sum` checksum errors referenced in [#68](https://github.com/webbankir/go-discover/issues/68), 
 you will need Go 1.11.4+ to build/test go-discover.**
 
 Configuration tests can be run with Go:
