@@ -1,4 +1,4 @@
-module github.com/hashicorp/go-discover
+module github.com/webbankir/go-discover
 
 require (
 	github.com/Azure/azure-sdk-for-go v44.0.0+incompatible
