@@ -4,6 +4,7 @@ package discover
 
 import (
 	"fmt"
+	"github.com/webbankir/go-discover/provider/dns"
 	"github.com/webbankir/go-discover/provider/yandex_instance_group_discover"
 	"log"
 	"sort"
@@ -50,6 +51,7 @@ var Providers = map[string]Provider{
 	"aws":                         &aws.Provider{},
 	"azure":                       &azure.Provider{},
 	"digitalocean":                &digitalocean.Provider{},
+	"dns":                         &dns.Provider{},
 	"gce":                         &gce.Provider{},
 	"linode":                      &linode.Provider{},
 	"mdns":                        &mdns.Provider{},
